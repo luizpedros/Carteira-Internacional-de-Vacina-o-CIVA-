@@ -1,0 +1,43 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="row">
+    
+     <input type="hidden" class="form-control" value="${pais.idPais}" id="id-pais" name="id-pais">
+     
+    <div class="form-group col-xl-3">                
+        <label for="pais">Pa&iacute;s</label>
+        <input type="text" class="form-control" value="${pais.nomePais}" id="pais" name="pais">
+            
+    </div>
+    
+     <div class="form-group col-xl-3">
+        <label for="sigla">Sigla</label>
+        <input type="text" class="form-control" value="${pais.sigla}" id="sigla" name="sigla">
+    </div>    
+    
+    <div class="form-group col-xl-6">
+        <label for="continente">Continente</label>
+        <input type="hidden" value="${pais.idContinente}" name="id-continente">
+        <input id="continente" name="continente" value="${pais.nomeContinente}" class="form-control">                  
+    </div>    
+</div>
+
+<div class="row">
+    <div class="form-group col-xl-6">
+        <label for="ddi">DDI</label>
+        <input type="text" class="form-control" value="${pais.ddi}" id="ddi" name="ddi">
+    </div>
+    
+    <div class="form-group col-xl-6">
+        <label for="padrao-contato">Padrão dos Contatos</label>
+        <input type="text" class="form-control" value="${pais.padraoContato}" id="padrao-contato" name="padrao-contato">
+    </div>    
+</div>
+
+<div class="row">
+    <div class="form-group col-xl-12">
+        <label for="orgao-saude">&Oacute;rg&atilde;o de Sa&uacute;de</label>
+        <input type="text" class="form-control" id="orgao-saude" name="orgao-saude" value="${pais.orgaoResponsavel}">
+    </div>       
+</div>

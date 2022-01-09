@@ -1,0 +1,24 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+
+<c:forEach items="${pais.tiposDoc}" var="tipodoc" varStatus="loop">
+    <div class="row">
+        <input type="hidden" value="${tipodoc.idTipoDoc}" name="id-tipo-doc-${loop.count}">
+        <div class="form-group col-xl-4">
+            <label for="nivel-doc">Tipo do Documento ${loop.count} </label>
+            <input id="nivel-doc" name="nivel-doc-${loop.count}" type="text" value="${tipodoc.nivel}" class="form-control"  >
+        </div>
+
+        <div class="form-group col-xl-4">
+            <label for="nome-doc">Nome do Documento ${loop.count}</label>
+            <input id="nome-doc" name="nome-doc-${loop.count}" type="text" value="${tipodoc.nomeDoc}" class="form-control" >
+        </div>
+        <div class="form-group col-xl-4">
+            <label for="formato-doc">Formato do Documento ${loop.count}</label>
+            <input id="formato-doc" name="formato-doc-${loop.count}" type="text" value="${tipodoc.formatoDoc}" class="form-control"  >
+        </div>
+
+    </div>
+  </c:forEach>  
+

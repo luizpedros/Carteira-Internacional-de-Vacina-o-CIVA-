@@ -1,0 +1,87 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="row"> 
+    <div class="form-group col-xl-6">
+         <label for="nome-pais-gn">Pais</label>
+         <select disabled id="nome-pais-gn" name="nome-pais-gn" class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+            <option selected value="" selected>Selecionar Pais</option>
+             
+            <c:forEach items="${paises}" var="pais">
+                  <option value="${pais.idPais}"><c:out value="${pais.nomePais}" /></option>          
+              </c:forEach>
+                  
+        </select>
+                   
+    </div>
+    <div class="form-group col-xl-6">
+        <label for="cod-postal-gn">CEP</label>
+        <input minlength="1" maxlength="50" type="text" class="form-control" id="cod-postal-gn" name="cod-postal-gn" placeholder="21970-5050">
+    </div>
+</div>
+
+<div class="row"> 
+    <div class="form-group col-xl-6">
+        <label for="nome-logrd-gn">Endere&ccedil;o</label>
+        <input minlength="1" maxlength="100" type="text" class="form-control" id="nome-logrd-gn" name="nome-logrd-gn" placeholder="Rua Olímpia">
+    </div>
+    <div class="form-group col-xl-6">
+        <label for="nome-num-gn">N&uacute;mero</label>
+        <input minlength="1" maxlength="5" type="text" class="form-control" id="nome-num-gn" name="nome-num-gn" placeholder="18">    <!-- Adicionar no JS tratarCampos() -->
+    </div>
+</div>
+
+<div class="row">
+    <div class="form-group col-xl-6">
+        <label for="nome-comple-gn">Complemento</label>
+        <input minlength="1" maxlength="50" type="text" class="form-control" id="nome-comple-gn" name="nome-comple-gn" placeholder="Apto 404">    <!-- Adicionar no JS tratarCampos() -->
+    </div>
+    
+    <div class="form-group col-xl-6">
+        <label for="bairro-gn">Bairro</label>
+        <input minlength="1" maxlength="100" type="text" class="form-control" id="bairro-gn" name="bairro-gn" placeholder="bairro x">
+        
+        
+    </div>
+</div>
+
+<div class="row">
+    <div class="form-group col-xl-6">
+        <label for="municipio-gn">Munic&iacute;pio</label>
+         <input minlength="1" maxlength="100" type="text" class="form-control" id="municipio-gn" name="municipio-gn" placeholder="municipio x">               
+       
+    </div>
+    <div class="form-group col-xl-6">
+        <label for="estado-gn">Estado</label>
+        <select class="form-control select2 select2-hidden-accessible" id="estado-gn" name="estado-gn" style="width: 100%;" tabindex="-1" aria-hidden="true">
+            <option id="opcao-estado" selected="" disabled="">Selecionar Estado</option>
+            <option>Acre</option>
+            <option>Alagoas</option>
+            <option>Amap&aacute;</option>
+            <option>Amazonas</option>
+            <option>Bahia</option>
+            <option>Cear&aacute;</option>
+            <option>Distrito Federal</option>
+            <option>Esp&iacute;rito Santo</option>
+            <option>Goi&aacute;s</option>
+            <option>Maranh&atilde;o</option>
+            <option>Mato Grosso</option>
+            <option>Mato Grosso do Sul</option>
+            <option>Minas Gerais</option>
+            <option>Par&aacute;</option>
+            <option>Para&iacute;ba</option>
+            <option>Paran&aacute;</option>
+            <option>Pernambuco</option>
+            <option>Piau&iacute;</option>
+            <option>Rio de Janeiro</option>
+            <option>Rio Grande do Norte</option>
+            <option>Rio Grande do Sul</option>
+            <option>Rond&ocirc;nia</option>
+            <option>Roraima</option>
+            <option>Santa Catarina</option>
+            <option>S&atilde;o Paulo</option>
+            <option>Sergipe</option>
+            <option>Tocantins</option>
+            <option>Estrangeiro</option>
+        </select>
+    </div>
+</div>
