@@ -2,4 +2,11 @@
 
 ## Carteira Internacional de Vacinação
 
-- Projeto completo sendo integrado o frontend com o backend!
+
+hr
+
+### Requisitos para rodar o sistema
+
+#### - TomCat 7.0.47
+#### - Java 8 (1.8)
+#### - Docker / SQL
