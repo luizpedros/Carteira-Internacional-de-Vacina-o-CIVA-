@@ -10,7 +10,7 @@
 ##### link do site: http://projetociva.al.prodigyan.com.br/login/
 
 
-### Tecnologias utilizadas
+### Tecnologias utilizadas para o desenvolvimento:
 
 #### - TomCat 7.0.47
 #### - Java 8 (1.8)
