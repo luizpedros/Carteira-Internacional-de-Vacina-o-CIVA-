@@ -17,3 +17,4 @@
 #### - JavaScropt
 #### - Docker / AWS
 #### - MySQL
+#### - Jquery
