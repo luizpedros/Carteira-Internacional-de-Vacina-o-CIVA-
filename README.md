@@ -10,8 +10,10 @@
 ##### link do site: http://projetociva.al.prodigyan.com.br/login/
 
 
-### Requisitos para rodar o sistema
+### Tecnologias utilizadas
 
 #### - TomCat 7.0.47
 #### - Java 8 (1.8)
-#### - Docker / SQL
+#### - JavaScropt
+#### - Docker / AWS
+#### - MySQL
